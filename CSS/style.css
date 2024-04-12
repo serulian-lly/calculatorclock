@@ -1,0 +1,144 @@
+@font-face {
+    font-family: DS_DIGI;
+    src: url(FONTE/DS-DIGI.TTF);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: DS_DIGI;
+}
+
+/* RELOGIO */
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(purple, rgb(192, 47, 71));
+    font-family: DS_DIGI;
+}
+.relogio{
+    width: auto;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 10%;
+    box-shadow: 10px 15px 40px 15px;
+}
+
+.relogio div{
+    flex-direction: column;
+    width: 30%;
+    display: flex;
+    font-size: 50pt;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(206, 106, 172);
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.texto{
+    font-size: 15pt;
+}
+
+/* CALCULADORA */
+
+.uhu{
+    width: 90% ;
+    height: 50vh ;
+    margin-left: 35%;
+} 
+
+.calculadora{
+    display: flex;
+    align-items: stretch;
+    justify-items: stretch;
+    justify-content: center;
+    flex-direction :column;
+}
+
+.uhu input[type="text"] {
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid #f9a8d4; 
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+.botao-pequeno {
+    width: 20%; 
+    height: 50px; 
+    font-size: 1.2em; 
+    margin: 5px; 
+    flex-direction: row;
+    background-color: #f9a8d4; 
+    color: #fff; 
+    padding: 5px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botao-pequeno:hover {
+    background-color: #f48fb11b; 
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; 
+}
+
+form{
+        width: 60%;
+        flex-direction:column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(72, 32, 133);
+        background-color: rgba(124, 237, 255, 0.404);
+        padding: 25px;
+        border-radius: 40px;
+        font-size: 165%;
+        margin-left: 8%;
+    }
+
+    form input{
+        width: 100%;
+        height: 5vh;
+        border-radius: 10px;
+        border-color: rgb(72, 32, 133);
+        text-align: center;
+    }
+
+@media screen and (max-width: 600px){
+    .relogio{
+        display: flex;
+        flex-direction: column;
+    }
+    .relogio div{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .botao-pequeno {
+        width: 53%; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .botao-pequeno {
+        width: 45%; 
+    }
+}

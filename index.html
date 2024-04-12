@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset ="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content ="IE-edge">
+        <meta name ="viewport" content ="width=device-witdth, initial-scale=8">
+        <meta name = "author" content ="GaPo">
+        <link rel ="stylesheet" href="CSS/style.css">
+
+        <title>
+            Relógio
+        </title>
+        
+    </head>
+    <body>
+        <section class="relogio">
+            <div>
+                <span id = "hora">00</span>
+                <span class="texto">Hora</span>
+            </div>
+            <div>
+                <span id = "minuto">00</span>
+                <span class="texto">Minutos</span>
+            </div>
+            <div>
+                <span id = "segundo">00</span>
+                <span class="texto">Segundos</span>
+            </div>
+        </section>
+
+        <div class="uhu">
+            <section class="calculadora"></section>
+            <form action="#" name="calculadora" class="calculadora">
+                
+                <input type="text" name="valores" id="valores" placeholder="0">
+<br>
+<div class="linha">
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(7)">7</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(8)">8</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(9)">9</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarOperador('+')">+</button>
+</div>
+<div class="linha">
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(4)">4</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(5)">5</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(6)">6</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarOperador('-')">-</button>
+</div>
+<div class="linha">
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(1)">1</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(2)">2</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(3)">3</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarOperador('*')">*</button>
+</div>
+<div class="linha">
+    <button type="button" class="botao-pequeno" onclick="adicionarNumero(0)">0</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarDecimal()">.</button>
+    <button type="button" class="botao-pequeno" onclick="calcular()">=</button>
+    <button type="button" class="botao-pequeno" onclick="adicionarOperador('/')">/</button>
+</div>
+            
+            </div></form>
+        </div>
+
+       <script src="JS/script.js"></script>
+    </body>
+</html>
